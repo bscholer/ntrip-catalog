@@ -1293,6 +1293,33 @@
                     "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"NAD 83(2011)\",\"ID\":\"ISO:126\",\"EPOCH\":2010.0}}"
                 }
             ]
+        },
+        {
+            "name": "rtn.dot.ny.gov",
+            "description": "NYSNet Real Time Network",
+            "urls": [
+                "rtn.dot.ny.gov:8080"
+            ],
+            "reference": {
+                "url": "https://cors.dot.ny.gov/NYSNet%20MountPoints.pdf",
+                "comments": "PDF with mount points"
+            },
+            "streams": [
+                {
+                    "filter": {
+                        "countries": [
+                            "USA"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:6319",
+                            "name": "NAD83(2011)"
+                        }
+                    ],
+                    "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"NAD 83(2011)\",\"ID\":\"ISO:126\",\"EPOCH\":2010.0}}"
+                }
+            ]
         }
     ]
 }
