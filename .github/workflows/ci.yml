@@ -1,4 +1,4 @@
-name: CI
+name: Make dist and run tests
 
 on:
   push:
