@@ -1300,7 +1300,8 @@
             "name": "rtn.dot.ny.gov",
             "description": "NYSNet Real Time Network",
             "urls": [
-                "rtn.dot.ny.gov:8080"
+                "http://rtn.dot.ny.gov:8080",
+                "http://rtn.dot.ny.gov:8082"
             ],
             "reference": {
                 "url": "https://cors.dot.ny.gov/NYSNet%20MountPoints.pdf",
@@ -1313,7 +1314,8 @@
                     "crss": [
                         {
                             "id": "EPSG:6319",
-                            "name": "NAD83(2011)"
+                            "name": "NAD83(2011)",
+                            "epoch": 2010.0
                         }
                     ],
                     "comments": "CRS described in the PDF. All mountpoints use NAD83(2011) since 2019."
@@ -1328,7 +1330,7 @@
             ],
             "reference": {
                 "url": "https://www.mondopin.com/resources",
-                "description": "Mondo Pin documentation"
+                "description": "Mondo Pin documentation. See Q&A -> The Mondo Pin guide to mountpoints"
             },
             "last_update": "2025-03-26",
             "streams": [
@@ -1342,7 +1344,8 @@
                     "crss": [
                         {
                             "id": "EPSG:4939",
-                            "name": "GDA94"
+                            "name": "GDA94",
+                            "epoch": 1994.0
                         }
                     ],
                     "comments": "Mountpoints for Australia which use GDA94"
@@ -1357,10 +1360,100 @@
                     "crss": [
                         {
                             "id": "EPSG:7843",
-                            "name": "GDA2020"
+                            "name": "GDA2020",
+                            "epoch": 2020.0
                         }
                     ],
                     "comments": "Mountpoints for Australia which use GDA2020"
+                }
+            ]
+        },
+        {
+            "name": "mncors.dot.state.mn.us",
+            "description": "Minnesota DOT CORS",
+            "urls": [
+                "http://mncors.dot.state.mn.us:2101"
+            ],
+            "reference": {
+                "url": "https://www.dot.state.mn.us/surveying/cors/mncors_faq.html",
+                "comments": "Search for 'datum' on the page to find the table of mountpoints."
+            },
+            "last_update": "2025-03-26",
+            "streams": [
+                {
+                    "filter": {
+                      "mountpoints": [
+                        "CMRx_NAD83(1996)",
+                        "CMR_Plus_NAD83(1996)",
+                        "RTCM_34_NAD83(1996)",
+                        "RTCM_31_NAD83(1996)"
+                      ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:6781",
+                            "name": "NAD83(CORS96)"
+                        }
+                    ],
+                    "comments": "Mountpoints for Minnesota which use NAD83(CORS96)"
+                },
+                {
+                    "filter": {
+                      "mountpoints": [
+                        "CMRx_NAD83(2011)",
+                        "CMR_Plus_NAD83(2011)",
+                        "RTCM_34_NAD83(2011)",
+                        "RTCM_31_NAD83(2011)",
+                        "RTCM_23_NAD83(2011)",
+                        "AGCMRX",
+                        "AGCMRP",
+                        "AGRTCM34",
+                        "AGRTCM31"
+                      ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:6319",
+                            "name": "NAD83(2011)",
+                            "epoch": 2010.0
+                        }
+                    ],
+                    "comments": "Mountpoints for Minnesota which use NAD83(2011)"
+                }
+            ]
+        },
+        {
+            "name": "156.63.133.115",
+            "description": "Ohio DOT Real Time Network",
+            "urls": [
+                "http://156.63.133.115:2101"
+            ],
+            "reference": {
+                "url": "https://www.transportation.ohio.gov/working/engineering/cadd-mapping/survey/cors-rtn",
+                "comments": "See the 'Data Formats' section"
+            },
+            "last_update": "2025-03-26",
+            "streams": [
+                {
+                    "filter": {
+                        "mountpoints": [
+                            "ODOT_G_R_E_C_RTX_CMRx",
+                            "ODOT_G_R_E_C_RTX_RTCM3",
+                            "ODOT_VRS_CMR_PLUS",
+                            "ODOT_VRS_CMR_X",
+                            "ODOT_VRS_ODOT_Ag",
+                            "ODOT_VRS_RTCM23",
+                            "ODOT_VRS_RTCM3"
+                        ]
+                    },
+                    "crss": [
+                        {
+                            "id": "EPSG:6319",
+                            "name": "NAD83(2011)",
+                            "epoch": 2010.0
+                        }
+                    ],
+                    "comments": "All mountpoints use NAD83(2011)"
                 }
             ]
         }
