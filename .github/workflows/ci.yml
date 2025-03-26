@@ -17,8 +17,9 @@ jobs:
         python-version: [3.11]
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
@@ -48,4 +49,4 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add dist/ntrip-catalog.json
           git commit -m "Auto-update ntrip-catalog.json" || echo "No changes to commit"
-          git push
+          git push origin HEAD
