@@ -1306,6 +1306,7 @@
                 "url": "https://cors.dot.ny.gov/NYSNet%20MountPoints.pdf",
                 "comments": "PDF with mount points"
             },
+            "last_update": "2025-03-26",
             "streams": [
                 {
                     "filter": "all",
@@ -1315,7 +1316,51 @@
                             "name": "NAD83(2011)"
                         }
                     ],
-                    "comments": "CRS described in the STR string {\"REF\":{\"NAME\":\"NAD 83(2011)\",\"ID\":\"ISO:126\",\"EPOCH\":2010.0}}"
+                    "comments": "CRS described in the PDF. All mountpoints use NAD83(2011) since 2019."
+                }
+            ]
+        },
+        {
+            "name": "x.mondopin.com",
+            "description": "Mondo Pin GNSS Correction Service",
+            "urls": [
+                "http://x.mondopin.com:2101"
+            ],
+            "reference": {
+                "url": "https://www.mondopin.com/resources",
+                "description": "Mondo Pin documentation"
+            },
+            "last_update": "2025-03-26",
+            "streams": [
+                {
+                    "mountpoints": [
+                        "94_VRS_MSM",
+                        "94_VRS_RTCM30",
+                        "94_NEAR_MSM",
+                        "94_NEAR_RTCM30"
+                    ],
+                    "crss": [
+                        {
+                            "id": "EPSG:4939",
+                            "name": "GDA94"
+                        }
+                    ],
+                    "comments": "Mountpoints for Australia which use GDA94"
+                },
+                {
+                    "mountpoints": [
+                        "20_VRS_MSM",
+                        "20_VRS_RTCM30",
+                        "20_NEAR_MSM",
+                        "20_NEAR_RTCM30"
+                    ],
+                    "crss": [
+                        {
+                            "id": "EPSG:7843",
+                            "name": "GDA2020"
+                        }
+                    ],
+                    "comments": "Mountpoints for Australia which use GDA2020"
                 }
             ]
         }
