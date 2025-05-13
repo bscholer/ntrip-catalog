@@ -1,7 +1,7 @@
 {
     "$id": "entries.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "version": "0.1",
+    "version": "0.2",
     "title": "NTRIP-catalog entry",
     "description": "Definition of a list of entries",
     "type": "array",
