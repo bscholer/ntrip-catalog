@@ -3,6 +3,7 @@
         "name": "NCDOT",
         "description": "North Carolina CORS",
         "urls": [
+            "http://207.4.96.200:2101",
             "http://rtn.nc.gov:2101"
         ],
         "reference": {
