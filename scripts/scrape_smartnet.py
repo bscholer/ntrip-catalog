@@ -394,7 +394,9 @@ def build_catalog_entries(
     service_name = "SmartNet"
     description = "Hexagon SmartNet RTK Network"
     reference_url = "https://www.smartnetna.com/resources_configuration.cfm"
-    reference_desc = "Scraped and generated from above page, with script detailed in https://github.com/Pix4D/ntrip-catalog/pull/9/files#r2064885244"
+    reference_desc = (
+        "Scraped and generated from above page, with scripts/scrape_smartnet.py"
+    )
     last_update = datetime.now().strftime("%Y-%m-%d")
 
     catalog = []
