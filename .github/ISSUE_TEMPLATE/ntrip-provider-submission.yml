@@ -1,6 +1,6 @@
 name: NTRIP Provider Submission
 description: Submit your NTRIP network information to the catalog
-title: "[NETWORK] Add "
+title: "Add [NETWORK] to the NTRIP catalog"
 labels: ["provider-submission"]
 body:
   - type: markdown
